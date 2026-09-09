@@ -313,7 +313,7 @@ def new_slide(title, tag, timing, step, accent=SKY, bg=CREAM):
     chip(slide, tag, accent)
     if timing:
         time_chip(slide, timing)
-    tb(slide, Inches(0.4), Inches(0.8), Inches(12.4), Inches(0.6), title, size=28, bold=True,
+    tb(slide, Inches(0.4), Inches(0.8), Inches(12.4), Inches(0.5), title, size=28, bold=True,
        color=NAVY, font="Georgia")
     footer(slide, n, timing, step)
     fade(slide)
@@ -1420,7 +1420,7 @@ def s33_homework():
 def s34_assessment():
     slide, n = new_slide("📋 Teacher Assessment — Progress Record", "TEACHER ONLY", "",
                          "Assessment", NAVY)
-    tb(slide, Inches(0.45), Inches(1.3), Inches(12.4), Inches(0.35),
+    tb(slide, Inches(0.45), Inches(1.34), Inches(12.4), Inches(0.35),
        "TEACHER ONLY — do not show this slide to the student. Record progress, not failure.",
        size=13, bold=True, color=CORAL)
     header_y = Inches(1.75)
@@ -1463,7 +1463,7 @@ def s34_assessment():
 
 def s35_answer_key():
     slide, n = new_slide("🔑 Answer Key", "TEACHER ONLY", "", "Answer key", NAVY)
-    tb(slide, Inches(0.45), Inches(1.28), Inches(12.4), Inches(0.35),
+    tb(slide, Inches(0.45), Inches(1.34), Inches(12.4), Inches(0.35),
        "TEACHER ONLY — hide this slide before presenting.", size=13, bold=True, color=CORAL)
     add_round(slide, Inches(0.45), Inches(1.72), Inches(6.1), Inches(4.95), WHITE)
     tb(slide, Inches(0.7), Inches(1.9), Inches(5.6), Inches(0.4), "🔤 Phonics & Word Games",
